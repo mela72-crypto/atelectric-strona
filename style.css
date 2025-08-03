@@ -43,3 +43,52 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+/* Animacja Dlaczego warto nas wybrać */
+.why-us {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.why-us h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+  animation: slideIn 1s ease-in-out;
+}
+.reasons {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.reasons li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+.reasons li:nth-child(1) { animation-delay: 0.2s; }
+.reasons li:nth-child(2) { animation-delay: 0.4s; }
+.reasons li:nth-child(3) { animation-delay: 0.6s; }
+.reasons li:nth-child(4) { animation-delay: 0.8s; }
+.reasons li:nth-child(5) { animation-delay: 1s; }
+
+/* Animacje */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
