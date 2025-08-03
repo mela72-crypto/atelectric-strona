@@ -213,3 +213,57 @@ main {
     transform: scale(1);
   }
 }
+/* 🔧 RESPONSYWNOŚĆ – dopasowanie do telefonów */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .gallery figure {
+    width: 100%;
+  }
+
+  .gallery img {
+    border-radius: 5px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .reasons {
+    padding-left: 20px;
+  }
+
+  .reasons li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
