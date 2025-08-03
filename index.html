@@ -2,71 +2,135 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A.T.-ELECTRIC Instalacje Elektryczne | Słupca i okolice</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A.T.-ELECTRIC | Instalacje Elektryczne</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
-    header { background: #111; color: white; padding: 30px 20px; text-align: center; }
-    nav { background: #222; color: white; text-align: center; padding: 10px 0; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 8px; }
-    h1, h2 { color: #111; }
-    ul { list-style: none; padding-left: 0; }
-    li::before { content: "✔️ "; }
-    footer { text-align: center; padding: 20px; background: #111; color: white; margin-top: 20px; }
-    .contact a { display: block; color: #007bff; margin: 5px 0; }
-    .button { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; margin-top: 20px; }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #0c0c0c;
+      color: #fff;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    header h1 {
+      color: #ff0000;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border: 2px solid #444;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>A.T.-ELECTRIC Instalacje Elektryczne</h1>
-    <p>Słupca i okolice</p>
+    <img src="logo-czacha-czarna.jpg" alt="Logo A.T.-ELECTRIC" />
+    <h1>A.T.-ELECTRIC</h1>
+    <p>Instalacje Elektryczne – Słupca i okolice</p>
   </header>
 
   <nav>
     <a href="#oferta">Oferta</a>
-    <a href="#opinie">Opinie</a>
+    <a href="#realizacje">Realizacje</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
 
   <section id="oferta">
-    <h2>Nasza oferta</h2>
-    <p>Wykonujemy profesjonalne instalacje elektryczne w Twoim domu, mieszkaniu, lokalu i nie tylko. Usługi są rzetelne oraz z indywidualnym podejściem do klienta.</p>
+    <h2>Oferta</h2>
+    <p>Profesjonalne instalacje w domach, mieszkaniach i lokalach.</p>
     <ul>
       <li>Instalacje od podstaw i modernizacje</li>
-      <li>Naprawa awarii i usterek</li>
-      <li>Podłączenia AGD / indukcji</li>
-      <li>Przyłącza budowlane</li>
-      <li>Modernizacja i przebudowa instalacji</li>
-      <li>Oświetlenie ogrodów</li>
-      <li>Skrzynki bezpiecznikowe</li>
-      <li>Montaż gniazd, łączników, lamp, halogenów</li>
-      <li>Montaż oświetlenia LED</li>
-      <li>Instalacje RTV SAT</li>
-      <li>Pomiary elektryczne</li>
+      <li>Naprawy usterek, podłączenia AGD</li>
+      <li>Pomiary, oświetlenie ogrodów</li>
+      <li>Skrzynki bezpiecznikowe, LED, RTV SAT</li>
     </ul>
-    <p>Posiadam uprawnienia SEP i doświadczenie niezbędne do wykonania wszelkich prac elektrycznych.</p>
   </section>
 
-  <section id="opinie">
-    <h2>Opinie klientów</h2>
-    <p>Sprawdź opinie o naszej pracy:</p>
-    <a class="button" href="https://fixly.pl/profil/Ms84ktHo" target="_blank">Zobacz opinie na Fixly</a>
+  <section id="realizacje">
+    <h2>Realizacje</h2>
+    <div class="gallery">
+      <img src="multimeter.jpg" alt="Miernik" /><img src="clamp-meter.jpg" alt="Miernik" /><img src="tester.jpg" alt="Miernik" />
+    </div>
   </section>
 
   <section id="kontakt">
     <h2>Kontakt</h2>
-    <div class="contact">
-      <p><strong>Telefon:</strong> <a href="tel:883759103">883 759 103</a> / <a href="tel:512268277">512 268 277</a></p>
-      <p><strong>Email:</strong> <a href="mailto:atelectric@op.pl">atelectric@op.pl</a></p>
-      <p><strong>WhatsApp:</strong> dostępny pod powyższymi numerami</p>
-    </div>
+    <p>📞 Tel: 883 759 103 / 512 268 277</p>
+    <p>📧 Email: atelectric@op.pl</p>
+    <p>💬 WhatsApp: Tak</p>
   </section>
 
   <footer>
-    &copy; 2025 A.T.-ELECTRIC | Instalacje Elektryczne - Słupca i okolice
+    &copy; 2025 A.T.-ELECTRIC | Wszystkie prawa zastrzeżone
   </footer>
+
 </body>
 </html>
