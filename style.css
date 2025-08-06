@@ -289,4 +289,29 @@ footer.footer {
   max-width: 150px;
   margin: 10px;
 }
+.footer-section {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.partners {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.partners h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.partner-logos img {
+  max-width: 150px;
+  margin: 10px;
+}
+
+footer.footer {
+  text-align: center;
+  font-size: 12px;
+}
 
